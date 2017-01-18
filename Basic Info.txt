@@ -1,0 +1,35 @@
+Education
+	(2013-2015) Temple University
+		Computer Science
+	(2009-2012) Cleveland Institute of Music
+		Piano Performance
+	(2009-2012) Case Western Reserver University
+		English Literature
+
+Languages
+	Java
+	C
+	Python
+	HTML
+
+Extra
+	Flask
+	CSS
+	Linux/Unix
+	Windows
+
+Coursework
+	Data Structures (Java)
+	Low Level/System Programming (C, x86)
+	QA and Design (Java/Agnostic)
+	Network Architecture (Agnostic)
+
+Portfolio
+	(Python)	Interpreter for the esoteric programming language Brainf*ck
+	(Java)		Huffman Tree generator/text compression utility
+	(Python/
+	 Flask)		Web interface to search/maintain/detail movie collection
+
+Work History
+	(2015-2017) Barista for Gryphon Coffee House
+	(2009-2010) Technical Support/Office Assistant Marc L Davidson Law
