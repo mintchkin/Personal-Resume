@@ -1,0 +1,88 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{array}
+\usepackage{fontspec}                       %for loading fonts
+\usepackage{color}
+\usepackage[big]{layaureo}                  %better formatting of the A4 page
+\usepackage{xunicode,xltxtra,url,parskip}   %other packages for formatting
+\usepackage{titlesec}                       %custom \section
+\usepackage{tabularx}
+% \usepackage{showframe}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\setmainfont{Fontin.otf}[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf]
+
+%CV Sections
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\newfontfamily\defaultfont{Latin Modern Roman} % Default font, for \LaTeX
+
+%--------------------TITLE-------------
+\par{\centering
+        {\Huge Nicholas \textsc{Dobner}
+    }\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+\section{Personal}
+\begin{tabular}{rl}
+    \textsc{Address:}   & 808 Berwyn Baptist Rd. \\
+    \textsc{Phone:}     & (484)-620-4253 \\
+    \textsc{email:}     & \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \\
+    \textsc{github:}    & \href{https://github.com/mintchkin}{http://github.com/mintchkin}
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
+    2015\,--\,\emph{Current}& Barista at \textsc{Gryphon Cafe}, Wayne, PA \\
+    & \footnotesize{Responsibilities include setting up and breaking down the cafe as part of daily operations, customer service and interaction both by phone and at the register, accounting and recording daily income from sales, preparing food and drinks at customers' request} \\
+\end{tabularx}
+
+\section{Education}
+\begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
+    2013\,--\,2015 & Computer Science \hfill \textsc{Temple University}, Philadelphia \\
+    \textsc{Coursework} & \footnotesize{Data Structures} \\
+    & \footnotesize{Low-Level/Systems Programming} \\
+    & \footnotesize{QA and Design} \\
+    & \footnotesize{Network Architecture} \\
+    \multicolumn{2}{c}{} \\
+    2009\,--\,2012 & Piano Performance \hfill \textsc{Cleveland Institute of Music}, Cleveland \\
+    \textsc{Coursework} & \footnotesize{Music Theory} \\
+    & \footnotesize{Music History} \\
+    & \footnotesize{Euhrythmics} \\
+    & \footnotesize{Piano Literature} \\
+    \multicolumn{2}{c}{} \\
+    2009\,--\,2012 & English Literature \hfill \textsc{Case Western Reserve University}, Cleveland \\
+    \textsc{Coursework} & \footnotesize{American Literature} \\
+    & \footnotesize{Study of the Novel} \\
+    & \footnotesize{Writing Seminar}
+\end{tabularx}
+
+\section{Computer Skills}
+% \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
+% \end{tabularx}
+% \begin{tabular}{rl}
+%  Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\defaultfont \LaTeX} \\
+% Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint \\
+% \end{tabular}
+
+\section{Interests and Activities}
+% Technology, Open-Source, Programming\\
+% Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+% Football, Travelling
+
+\end{document}
