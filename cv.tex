@@ -32,6 +32,8 @@ ItalicFont = Fontin-Italic.otf]
 
 \newfontfamily\defaultfont{Latin Modern Roman} % Default font, for \LaTeX
 
+\newcolumntype{L}[1]{@{}>{\raggedleft\arraybackslash}m{#1}} % Left list column
+
 %--------------------TITLE-------------
 \begin{center}
     \Huge Nicholas \textsc{Dobner}
@@ -40,7 +42,7 @@ ItalicFont = Fontin-Italic.otf]
 
 %--------------------SECTIONS-----------------------------------
 \section{Contact}
-\begin{tabular}{@{}>{\raggedleft\arraybackslash}m{6.5em}l}
+\begin{tabular}{L{6.5em}l}
     Address:   & 808 Berwyn Baptist Rd., Devon, PA 19333 \\
     Phone:     & (484)-620-4253 \\
     Email:     & \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \\
@@ -52,7 +54,7 @@ This is a test resume objective statement. I am writing this here because I want
 tailored objective that I include with my resume will be typeset correctly.
 
 \section{Computer Skills}
-\begin{tabular}{@{}>{\raggedleft\arraybackslash}m{6.5em}l}
+\begin{tabular}{L{6.5em}l}
     Languages:      & \textsc{Python}, \textsc{C}, \textsc{Java}, \textsc{Javascript} \\
     Environments:   & \textsc{Windows}, \textsc{Linux/Unix} \\
     Web:            & \textsc{Html}, \textsc{Css}, \textsc{Flask} \\
