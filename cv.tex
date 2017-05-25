@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 %A Few Useful Packages
 \usepackage{array}
@@ -21,6 +21,13 @@ SmallCapsFont = Fontin-SmallCaps.otf,
 BoldFont = Fontin-Bold.otf,
 ItalicFont = Fontin-Italic.otf]
 
+\newfontfamily\fawesome{FontAwesome}
+\newcommand{\phoneico}{ {\fawesome\char"F098} }
+\newcommand{\mailico}{ {\fawesome\char"F0E0} }
+\newcommand{\githubico}{ {\fawesome\char"F092} }
+
+\newfontfamily\defaultfont{Latin Modern Roman} % Default font, for \LaTeX
+
 %CV Sections
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
@@ -30,24 +37,25 @@ ItalicFont = Fontin-Italic.otf]
 
 \pagestyle{empty} % non-numbered pages
 
-\newfontfamily\defaultfont{Latin Modern Roman} % Default font, for \LaTeX
-
 \newcolumntype{L}[1]{@{}>{\raggedleft\arraybackslash}m{#1}} % Left list column
 
 %--------------------TITLE-------------
 \begin{center}
-    \Huge Nicholas \textsc{Dobner}
-    % \bigskip
+    {\Huge Nicholas \textsc{Dobner}} \\
+    808 Berwyn Baptist Rd., Devon, PA 19333 \\
+    \phoneico (484)-620-4253 \enspace|\enspace
+    \mailico \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \enspace|\enspace
+    \githubico \href{https://github.com/mintchkin}{https://github.com/mintchkin}
 \end{center}
 
 %--------------------SECTIONS-----------------------------------
-\section{Contact}
-\begin{tabular}{L{6.5em}l}
-    Address:   & 808 Berwyn Baptist Rd., Devon, PA 19333 \\
-    Phone:     & (484)-620-4253 \\
-    Email:     & \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \\
-    Github:    & \href{https://github.com/mintchkin}{http://github.com/mintchkin}
-\end{tabular}
+% \section{Contact}
+% \begin{tabular}{L{6.5em}l}
+%     Address:   & 808 Berwyn Baptist Rd., Devon, PA 19333 \\
+%     Phone:     & (484)-620-4253 \\
+%     Email:     & \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \\
+%     Github:    & \href{https://github.com/mintchkin}{http://github.com/mintchkin}
+% \end{tabular}
 
 \section{Objective}
 An entry level development position in an engaging environment that could integrate a dedicated and motivated computer scientist with a diverse skillset and broad educational background.
