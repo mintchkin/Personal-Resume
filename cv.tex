@@ -9,6 +9,7 @@
 \usepackage{titlesec}                       %custom \section
 \usepackage{tabularx}
 \usepackage{enumitem}
+\usepackage{makecell}
 % \usepackage{showframe}
 
 %Setup hyperref package, and colours for links
@@ -29,18 +30,21 @@ ItalicFont = Fontin-Italic.otf]
 \newcommand{\mailico}{ {\fawesome\char"F0E0} }
 \newcommand{\githubico}{ {\fawesome\char"F092} }
 
-\newfontfamily\defaultfont{Latin Modern Roman} % Default font, for \LaTeX
+% Default font, for \LaTeX
+\newfontfamily\defaultfont{Latin Modern Roman}
 
 %CV Sections
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1pt}{1pt}
+\titlespacing{\section}{0pt}{8pt}{1pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-\pagestyle{empty} % non-numbered pages
+% Don't add page numbers
+\pagestyle{empty}
 
-\newcolumntype{L}[1]{@{}>{\raggedleft\arraybackslash}m{#1}} % Left list column
+% Define a left list column
+\newcolumntype{L}[1]{@{}>{\raggedleft\arraybackslash}m{#1}}
 
 %--------------------TITLE-------------
 \begin{center}
@@ -55,61 +59,50 @@ ItalicFont = Fontin-Italic.otf]
 
 
 %--------------------SECTIONS-----------------------------------
-% \section{Contact}
-% \begin{tabular}{L{6.5em}l}
-%     Address:   & 808 Berwyn Baptist Rd., Devon, PA 19333 \\
-%     Phone:     & (484)-620-4253 \\
-%     Email:     & \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \\
-%     Github:    & \href{https://github.com/mintchkin}{http://github.com/mintchkin}
-% \end{tabular}
-
 \section{Objective}
-An entry level development position in an engaging environment that could integrate a dedicated and motivated computer scientist with a diverse skillset and broad educational background.
+A junior software development position in an engaging environment that could integrate a dedicated and motivated computer scientist with a diverse skillset and broad educational background.
 
 \section{Computer Skills}
 \begin{tabular}{L{6.5em}l}
-    Languages:      & \textsc{Python}, \textsc{C}, \textsc{Java}, \textsc{Javascript} \\
+    Languages:      & \textsc{Python}, \textsc{C}, \textsc{C\#}, \textsc{Java}, \textsc{Javascript} \\
     Environments:   & \textsc{Windows}, \textsc{Linux/Unix} \\
-    Web:            & \textsc{Html}, \textsc{Css}, \textsc{Flask}, \textsc{Rails} \\
-    Misc:           & {\defaultfont\LaTeX}, \textsc{Git}
+    Web:            & \textsc{Html}, \textsc{Css}, \textsc{Flask}, \textsc{Rails}, \textsc{ASP.NET} \\
+    Misc:           & {\defaultfont\LaTeX}, \textsc{Git}, \textsc{Docker}
 \end{tabular}
 
-% \section{Work Experience}
-% \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
-%     2015\,--\,\emph{Current} & \textbf{Barista} at \textsc{Gryphon Cafe} \hfill Wayne, PA \\
-%     & \footnotesize Responsibilities include setting up and breaking down the cafe as part of daily operations, customer service and interaction both by phone and at the register, accounting and recording daily income from sales, preparing food and drinks at customers' request \\
-% \end{tabularx}
+\section{Work Experience}
+\begin{tabularx}{\textwidth}{@{\extracolsep{2pt}}p{6em}|X@{}}
+    2018\,--\,\emph{Current} & \textbf{Full Stack Developer} at \textsc{JetSpring, LLC.} \hfill Radnor, PA \\
+    \textsc{Technologies}    & \textsc{Python}, \textsc{C\#}, \textsc{Flask}, \textsc{ASP.NET} \\
+                             & \footnotesize Replace legacy manual product deployments with automated Docker deployment system \\
+                             & \footnotesize Project lead on a Flask web application for mass text message marketing campaigns \\
+                             & \footnotesize Lead developer for a project to orchestrate deployments of chatbot-guided text message campaigns, allowing clients to dramatically improve customer engagement \\
+    \multicolumn{2}{c}{} \\
+
+    2017\,--\,2017           & \textbf{Guest Lecturer} at \textsc{Dev Bootcamp} \hfill New York, NY \\
+    \textsc{Technologies}    & \textsc{Data Structures}, \textsc{Algorithms} \\
+                             & \footnotesize Lecture on data structures and abstract data types to recent program graduates \\
+                             & \footnotesize Lead whiteboarding seminars to demonstrate how data structures can be used to improve code clarity \\
+\end{tabularx}
 
 \section{Education}
 \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
-    2013\,--\,2015 & \textbf{Computer Science} at \textsc{Temple University} \hfill Philadelphia, PA \\
+    2013\,--\,2015      & \textbf{Computer Science} at \textsc{Temple University} \hfill Philadelphia, PA \\
     \textsc{Coursework} & \footnotesize Data Structures \\
-    & \footnotesize Low-Level/Systems Programming \\
-    & \footnotesize QA and Design \\
-    & \footnotesize Network Architecture \\
+                        & \footnotesize Low-Level/Systems Programming \\
+                        & \footnotesize QA and Design \\
+                        & \footnotesize Network Architecture \\
     \multicolumn{2}{c}{} \\
 
-    2009\,--\,2012 & \textbf{Piano Performance} at \textsc{Cleveland Institute of Music} \hfill Cleveland, OH \\
+    2009\,--\,2012      & \textbf{Piano Performance} at \textsc{Cleveland Institute of Music} \hfill Cleveland, OH \\
     \textsc{Coursework} & \footnotesize Music Theory \\
-    & \footnotesize Music History \\
-    & \footnotesize Eurhythmics \\
-    & \footnotesize Piano Literature \\
-    \multicolumn{2}{c}{} \\
-
-    2009\,--\,2012 & \textbf{English Literature} at \textsc{Case Western Reserve University} \hfill Cleveland, OH \\
-    \textsc{Coursework} & \footnotesize American Literature \\
-    & \footnotesize Study of the Novel \\
-    & \footnotesize Writing Seminar
+                        & \footnotesize Music History \\
+                        & \footnotesize Eurhythmics \\
+                        & \footnotesize Piano Literature \\
 \end{tabularx}
 
 \section{Additional Projects}
 \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
-    \textit{InDev.} & JobPostr -- A web application built in Rails/React for posting job offerings \\
-    \multicolumn{2}{c}{} \\
-    2/28/2017 5/30/2017 & Guest lecture at DevBootcamp on data structures and abstract data types to recent graduates at their NYC campus \\
-    \multicolumn{2}{c}{} \\
-    \textit{InDev.} & Eurappmics -- A web application built in Flask targetted towards music students to aid in rhythmic training using techniques from Dalcroze Eurhythmics. \\
-    \multicolumn{2}{c}{} \\
     \textit{Complete} & Huffman Compressor -- A textfile compression utility that makes use of Huffman coding to reduce file sizes
 \end{tabularx}
 
