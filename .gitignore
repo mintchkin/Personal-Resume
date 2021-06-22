@@ -13,6 +13,7 @@
 
 ## Intermediate documents:
 *.dvi
+*.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
 *.ps
@@ -221,3 +222,6 @@ TSWLatexianTemp*
 
 # Fonts
 *.otf
+
+# VS Code files
+.vs

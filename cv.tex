@@ -1,10 +1,10 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 %A Few Useful Packages
 \usepackage{array}
 \usepackage{fontspec}                       %for loading fonts
 \usepackage{color}
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=0.8in]{geometry}
 \usepackage{parskip}
 \usepackage{titlesec}                       %custom \section
 \usepackage{tabularx}
@@ -35,7 +35,7 @@ ItalicFont = Fontin-Italic.otf]
 
 %CV Sections
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{8pt}{1pt}
+\titlespacing{\section}{0pt}{8pt}{8pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -50,7 +50,7 @@ ItalicFont = Fontin-Italic.otf]
 \begin{center}
     {\Huge Nicholas \textsc{Dobner}} \\
     \bigskip
-    \homeico 444 N. 4th St. Apt. 810, Philadelphia, PA 19123 \\
+    \homeico 915 S. 11th St. Apt 1A, Philadelphia, PA 19147 \\
     \phoneico (484)-620-4253 \enspace|\enspace
     \mailico \href{mailto:dobner.nicholas@gmail.com}{dobner.nicholas@gmail.com} \enspace|\enspace
     \githubico \href{https://github.com/mintchkin}{mintchkin} \enspace|\enspace
@@ -60,50 +60,50 @@ ItalicFont = Fontin-Italic.otf]
 
 %--------------------SECTIONS-----------------------------------
 \section{Objective}
-A junior software development position in an engaging environment that could integrate a dedicated and motivated computer scientist with a diverse skillset and broad educational background.
+A mid to senior software engineering position in a technically engaging environment that offers opportunities for growth to a motivated, experienced engineer with a diverse skillset and strong technical background.
 
 \section{Computer Skills}
 \begin{tabular}{L{6.5em}l}
-    Languages:      & \textsc{Python}, \textsc{C}, \textsc{C\#}, \textsc{Java}, \textsc{Javascript} \\
-    Environments:   & \textsc{Windows}, \textsc{Linux/Unix} \\
-    Web:            & \textsc{Html}, \textsc{Css}, \textsc{Flask}, \textsc{Rails}, \textsc{ASP.NET} \\
-    Misc:           & {\defaultfont\LaTeX}, \textsc{Git}, \textsc{Docker}
+    Languages:    & \textsc{Python}, \textsc{TypeScript}, \textsc{Elm}, \textsc{C\#}   \\
+    Web:          & \textsc{React}, \textsc{Apollo/GraphQL}                            \\
+    Misc:         & \textsc{gRPC}, \textsc{Git}, \textsc{Docker}, {\defaultfont\LaTeX} \\
+    Environments: & \textsc{Windows}, \textsc{macOS/Linux}                             \\
 \end{tabular}
 
 \section{Work Experience}
 \begin{tabularx}{\textwidth}{@{\extracolsep{2pt}}p{6em}|X@{}}
-    2018\,--\,\emph{Current} & \textbf{Software Developer} at \textsc{JetSpring, LLC.} \hfill Radnor, PA \\
-    \textsc{Technologies}    & \textsc{Python}, \textsc{C\#}, \textsc{Flask}, \textsc{ASP.NET} \\
-                             & \footnotesize Replace legacy product deployments with automated Docker deployment system \\
-                             & \footnotesize Project lead on a Flask web application for mass text message marketing campaigns \\
-                             & \footnotesize Lead developer for a project to orchestrate deployments of chatbot-guided text message campaigns, allowing clients to dramatically improve customer engagement \\
-    \multicolumn{2}{c}{} \\
+    2019\,--\,\emph{Current} & \textbf{Software Engineer} at \textsc{JOOR} \hfill Philadelphia, PA                                                                                                           \\
+    \textsc{Technologies}    & \textsc{Python}, \textsc{Typescript}, \textsc{gRPC}, \textsc{GraphQL}, \textsc{React}, \textsc{Django}                                                                        \\
+                             & \footnotesize Team lead on a project for implementing real-time collaboration features and event streaming with kafka/debezium                                                \\
+                             & \footnotesize Execute a large scale migration for existing GraphQL server application from JavaScript to TypeScript, including code generation and build configuration        \\
+                             & \footnotesize Introduce engineering tooling improvements, such as a python auto-formatter (black), a python build and CI script manager (tox), and end-to-end type generation \\
+                             & \footnotesize Start a tech "book" club, where the format is to watch a new tech conference talk each week and then lead coworkers in a discussion about the topic             \\
 
-    2017\,--\,2017           & \textbf{Guest Lecturer} at \textsc{Dev Bootcamp} \hfill New York, NY \\
-    \textsc{Technologies}    & \textsc{Data Structures}, \textsc{Algorithms} \\
-                             & \footnotesize Lecture on data structures and abstract data types to recent program graduates \\
-                             & \footnotesize Lead whiteboarding seminars to demonstrate how data structures can be used to improve code clarity \\
+    \multicolumn{2}{c}{}                                                                                                                                                                                     \\
+
+    2018\,--\,2019           & \textbf{Software Developer} at \textsc{JetSpring, LLC.} \hfill Radnor, PA                                                                                                     \\
+    \textsc{Technologies}    & \textsc{Python}, \textsc{C\#}, \textsc{Flask}, \textsc{ASP.NET}                                                                                                               \\
+                             & \footnotesize Replace legacy product deployments with automated Docker deployment system                                                                                      \\
+                             & \footnotesize Project lead on a Flask web application for mass text message marketing campaigns                                                                               \\
+                             & \footnotesize Lead developer for a project to orchestrate deployments of chatbot-guided text message campaigns, allowing clients to dramatically improve customer engagement  \\
 \end{tabularx}
 
 \section{Education}
 \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
-    2013\,--\,2015      & \textbf{Computer Science} at \textsc{Temple University} \hfill Philadelphia, PA \\
-    \textsc{Coursework} & \footnotesize Data Structures \\
-                        & \footnotesize Low-Level/Systems Programming \\
-                        & \footnotesize QA and Design \\
-                        & \footnotesize Network Architecture \\
-    \multicolumn{2}{c}{} \\
+    2013\,--\,2015 & \textbf{Computer Science} at \textsc{Temple University} \hfill Philadelphia, PA          \\
 
-    2009\,--\,2012      & \textbf{Piano Performance} at \textsc{Cleveland Institute of Music} \hfill Cleveland, OH \\
-    \textsc{Coursework} & \footnotesize Music Theory \\
-                        & \footnotesize Music History \\
-                        & \footnotesize Eurhythmics \\
-                        & \footnotesize Piano Literature \\
+    \multicolumn{2}{c}{}                                                                                      \\
+
+    2009\,--\,2012 & \textbf{Piano Performance} at \textsc{Cleveland Institute of Music} \hfill Cleveland, OH \\
 \end{tabularx}
 
 \section{Additional Projects}
 \begin{tabularx}{\textwidth}{@{}p{6em}|X@{}}
-    \textit{Complete} & Huffman Compressor -- A textfile compression utility that makes use of Huffman coding to reduce file sizes
+    \emph{In Progress} & \href{https://github.com/mintchkin/elmufactoria}{Elmufactoria} -- A logic game for the browser about guiding robots from one end to the other, but only if they follow the rules! \\
+
+    \multicolumn{2}{c}{}                                                                                                                                                                                   \\
+
+    \emph{Complete}    & \href{https://github.com/mintchkin/Huffman-Compressor}{Huffman Compressor} -- A text-file compression utility that uses Huffman coding to reduce file sizes                       \\
 \end{tabularx}
 
 \end{document}

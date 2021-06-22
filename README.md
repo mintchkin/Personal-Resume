@@ -7,6 +7,13 @@ Note: the .pdf file in this repo may or may not be up to date with the .tex code
 
 ## Dependencies
  * LaTeX itself, along with the following packages: `fontspec`, `geometry`, `parskip`, `titlesec`, `hyperref`
-
  * The Fontin font family from the [exljbris Font Foundry](https://www.exljbris.com/fontin.html)
  * Font Awesome from their [website](http://fontawesome.io/)
+
+## Build
+
+The build requires xelatex (because of the `fontspec` dependency).
+
+```sh
+xelatex -jobname='Nick Dobner CV' cv.tex
+```
