@@ -222,6 +222,7 @@ TSWLatexianTemp*
 
 # Fonts
 *.otf
+*.ttf
 
 # VS Code files
 .vs
